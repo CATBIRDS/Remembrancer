@@ -19,108 +19,145 @@ local localization = {
     -- Mod Info
     mod_name = {
         en = "Remembrancer",
+        ["zh-cn"] = "聊天消息时间戳",
     },
     -- Settings
     mod_settings = {
         en = "Mod Settings",
+        ["zh-cn"] = "MOD设置",
     },
     ENABLED = {
         en = "Enable/Disable Mod",
+        ["zh-cn"] = "模组启停",
+    },
+    -- Current Time
+    CURRENT = {
+        en = "Show Current Time in Chat Input"
     },
     -- Position
     POSITION = {
-        en = "Timestamp Position"
+        en = "Timestamp Position",
+        ["zh-cn"] = "时间戳位置"
     },
     sender = {
         en = "Before Message Sender",
+        ["zh-cn"] = "发信人之前",
     },
     message = {
         en = "After Message Sender",
+        ["zh-cn"] = "发信人之后",
     },
     -- Format
     FORMAT = {
-        en = "Timestamp Format"
+        en = "Timestamp Format",
+        ["zh-cn"] = "时间戳格式"
     },
     ["HH:MM"] = {
         en = "HH:MM",
+        ["zh-cn"] = "时:分",
     },
     ["HH:MM:SS"] = {
         en = "HH:MM:SS",
+        ["zh-cn"] = "时:分:秒",
     },
     ["HH:MM:SS.MS"] = {
         en = "HH:MM:SS.MS",
+        ["zh-cn"] = "时:分:秒.毫秒",
     },
     -- Frame
     FRAME = {
-        en = "Timestamp Frame"
+        en = "Timestamp Frame",
+        ["zh-cn"] = "时间戳框架"
     },
     none = {
         en = "None",
+        ["zh-cn"] = "无",
     },
     dash = {
         en = "Dash -",
+        ["zh-cn"] = "短横线 -",
     },
     colon = {
         en = "Colon:",
+        ["zh-cn"] = "冒号:",
     },
     brace = {
         en = "[Square]",
+        ["zh-cn"] = "[方框]",
     },
     curly = {
         en = "{Curly}",
+        ["zh-cn"] = "{花括号}",
     },
     angle = {
         en = "<Angled>",
+        ["zh-cn"] = "<尖括号>",
     },
     round = {
         en = "(Round)",
+        ["zh-cn"] = "(圆括号)",
     },
     -- Color
     COLOR = {
-        en = "Timestamp Color"
+        en = "Timestamp Color",
+        ["zh-cn"] = "时间戳颜色"
     },
     use_sender = {
         en = "Use Sender Color",
+        ["zh-cn"] = "使用发信人颜色",
     },
     reset = {
         en = color("None", "reset"),
+        ["zh-cn"] = color("无", "reset"),
     },
     white = {
         en = color("White", "white"),
+        ["zh-cn"] = color("白色", "white"),
     },
     black = {
         en = color("Black", "black"),
+        ["zh-cn"] = color("黑色", "black"),
     },
     red = {
         en = color("Red", "red"),
+        ["zh-cn"] = color("红色", "red"),
     },
     green = {
         en = color("Green", "green"),
+        ["zh-cn"] = color("绿色", "green"),
     },
     blue = {
         en = color("Blue", "blue"),
+        ["zh-cn"] = color("蓝色", "blue"),
     },
     yellow = {
         en = color("Yellow", "yellow"),
+        ["zh-cn"] = color("黄色", "yellow"),
     },
     cyan = {
         en = color("Cyan", "cyan"),
+        ["zh-cn"] = color("青色", "cyan"),
     },
     magenta = {
         en = color("Magenta", "magenta"),
+        ["zh-cn"] = color("品红色", "magenta"),
     },
     -- Other Settings
     NOTIFICATIONS = {
-        en = "Apply to System Messages"
+        en = "Apply to System Messages",
+        ["zh-cn"] = "应用于系统消息"
     },
     USE_PM = {
         en = "Use AM/PM Format",
+        ["zh-cn"] = "使用上午/下午格式",
     },
     USE_CJK = {
         en = "Use CJK Characters",
+        ["zh-cn"] = "使用中日韩字符",
     },
     USE_CJK_tooltip = {
         en = "Formats timestamp using locale-specific CJK Character Localization. Only applies when using CN/JP/KR system locale.",
+        ["zh-cn"] = "使用区域特定的中日韩字符本地化时间戳格式。仅在使用中文/日文/韩文系统区域设置时生效。",
     }
 }
 
@@ -142,7 +179,8 @@ local descriptions = {
 }
 local random_description = math.random(1, #descriptions)
 localization.mod_description = {
-    en = descriptions[random_description]
+    en = descriptions[random_description],
+    ["zh-cn"] = descriptions[random_description]  -- 使用游戏内置本地化
 }
 
 return localization

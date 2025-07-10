@@ -15,6 +15,12 @@ local widgets = {
                 default_value = true,
             },
             {
+                setting_id    = "CURRENT",
+                type          = "checkbox",
+                default_value = false,
+            },
+            --[[]
+            {
                 setting_id    = "POSITION",
                 type          = "dropdown",
                 default_value = "sender",
@@ -23,13 +29,15 @@ local widgets = {
                     { text = "message", value = "message" },
                 }
             },
+            --]]
             {
                 setting_id    = "FORMAT",
                 type          = "dropdown",
                 default_value = "HH:MM",
                 options = {
-                    { text = "HH:MM",       value = "HH:MM" },
-                    { text = "HH:MM:SS",    value = "HH:MM:SS" },
+                    { text = "HH:MM",       value = "HH:MM"       },
+                    { text = "HH:MM:SS",    value = "HH:MM:SS"    },
+                    { text = "HH:MM:SS.MS", value = "HH:MM:SS.MS" },
                 }
             },
             {
@@ -51,16 +59,16 @@ local widgets = {
                 type          = "dropdown",
                 default_value = "use_sender",
                 options = {
-                    { text = "use_sender",   value = "use_sender"   },
-                    { text = "reset",   value = "reset"   },
-                    { text = "white",   value = "white"   },
-                    { text = "black",   value = "black"   },
-                    { text = "red",     value = "red"     },
-                    { text = "green",   value = "green"   },
-                    { text = "blue",    value = "blue"    },
-                    { text = "yellow",  value = "yellow"  },
-                    { text = "cyan",    value = "cyan"    },
-                    { text = "magenta", value = "magenta" },
+                    { text = "use_sender", value = "use_sender" },
+                    { text = "reset",      value = "reset"      },
+                    { text = "white",      value = "white"      },
+                    { text = "black",      value = "black"      },
+                    { text = "red",        value = "red"        },
+                    { text = "green",      value = "green"      },
+                    { text = "blue",       value = "blue"       },
+                    { text = "yellow",     value = "yellow"     },
+                    { text = "cyan",       value = "cyan"       },
+                    { text = "magenta",    value = "magenta"    },
                 }
             },
             {
